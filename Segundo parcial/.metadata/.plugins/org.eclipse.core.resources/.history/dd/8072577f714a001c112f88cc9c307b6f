@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include "Libro.h"
+#include "LinkedList.h"
+
+/** \brief Parsea los datos los datos de los empleados desde el archivo data.csv (modo texto).
+ *
+ * \param path char*
+ * \param pArrayListEmployee LinkedList*
+ * \return int
+ *
+ */
+int parser_BookFromText(FILE* pFile, LinkedList* pArrayListBook)
+{
+	int retorno = -1;
+
+	eLibro* pLibro;
+
+	char id[128];
+	char titulo[128];
+	char autor[128];
+	char precio[128];
+	char idEditorial[128];
+
+	if(pFile != NULL &&  pArrayListBook!= NULL){
+		fscanf(pFile, "%[^,],%[^,],%[^,],%[^,],%[^\n]\n", id, titulo, autor, precio, idEditorial);
+		while(!feof(pFile)){
+
+			fscanf(pFile,"%[^,], %[^,], %[^,],%[^,],%[^\n]\n", id, titulo, autor, precio, idEditorial);
+			printf("%s - %s - %s - %s - %s\n", id, titulo, autor, precio, idEditorial);
+			pLibro = employee_newParametros(id, titulo, autor, precio, idEditorial);
+
+			if(pLibro != NULL){
+				if(ll_add(pArrayListBook,pLibro) == -1){
+					puts("Error");
+
+				}else{
+					retorno = 0;
+				}
+			}
+		}
+	}
+	return retorno;
+}
+int parser_EditorialFromText(FILE* pFile, LinkedList* pArrayListEditorial)
+{
+	int retorno = -1;
+
+	eEditorial* pEditorial;
+
+
+	char idEditorial[128];
+	char nombre[128];
+
+	if(pFile != NULL &&  pArrayListEditorial!= NULL){
+		fscanf(pFile, "%[^,],%[^\n]\n",idEditorial, nombre);
+		while(!feof(pFile)){
+
+			fscanf(pFile, "%[^,],%[^\n]\n",idEditorial, nombre);
+			printf("%s - %s\n",idEditorial, nombre);
+			pEditorial = employee_newParametros(- %s - %s - %s -);
+
+			if(pEditorial; != NULL){
+				if(ll_add(pArrayListBook,pEditorial) == -1){
+					puts("Error");
+
+				}else{
+					retorno = 0;
+				}
+			}
+		}
+	}
+	return retorno;
+}
+int parserLastIdFromText(FILE* pFile){
+	int retorno = -1;
+	char Id[128];
+
+	if(pFile != NULL){
+		while(!feof(pFile)){
+			fscanf(pFile, "%[^\n]\n", Id);
+			retorno = atoi(Id);
+		}
+	}
+
+	return retorno;
+}

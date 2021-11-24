@@ -1,0 +1,54 @@
+#include "Editorial.h"
+
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
+
+eEditorial* editorial_new()
+{
+	eLibro* newBook;
+    newBook = (eLibro*)malloc(sizeof(newBook));
+
+    if(newBook != NULL)
+    {
+    	newBook->id = 0;
+        strcpy(newBook->titulo, " ");
+        strcpy(newBook->autor, " ");
+        newBook->precio = 0;
+        newBook->idEditorial = 0;
+    }
+
+    return newBook;
+}
+eEditorial* editorial_newParametros(char* idStr, char* nombreStr)
+{
+	eEditorial* newEditorial ;
+	newEditorial = editorial_new();
+
+    int id;
+
+
+    if(idStr != NULL &&  newEditorial != NULL ){
+		id= atoi(idStr);
+
+		editorial_setId(newEditorial, id);
+		editorial_setNombre(newEditorial, nombreStr);
+    }
+
+    return newEditorial;
+}
+void editorial_delete(eEditorial* this){
+
+	if(this!=NULL){
+		free(this);
+	}
+
+}
+int editorial_setId(eEditorial* this,int id){
+
+}
+int editorial_getId(eEditorial* this,int* id);
+
+int editorial_setNombre(eEditorial* this,char* titulo);
+int editorial_getNombre(eEditorial* this,char* titulo);

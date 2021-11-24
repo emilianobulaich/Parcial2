@@ -1,0 +1,10 @@
+int controller_loadFromText(char* path , LinkedList* pArrayListEmployee);
+
+int controller_ListEmployee(LinkedList* pArrayListEmployee);
+int controller_sortBooks(LinkedList* pArrayListBook);
+int controller_saveAsText(char* path , LinkedList* pArrayListEmployee);
+
+int controller_LoadNextId(LinkedList* pArrayListEmployee);
+int controller_LastIdSaved(char* path);
+int controller_saveLastIdAsText(char* path, int id);
+
