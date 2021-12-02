@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Parcial2-Labo/LIBROS.csv&apos; to &apos;dataLibros.csv&apos;" description="Rename resource &apos;LIBROS.csv&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="LIBROS.csv" name="dataLibros.csv" stamp="1638482571507" updateReferences="true"/>
+</session>

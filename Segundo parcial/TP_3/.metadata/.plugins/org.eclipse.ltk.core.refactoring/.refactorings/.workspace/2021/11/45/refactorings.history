@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;tp3_windows/Input.c&apos;" deleteContents="false" description="Delete resource &apos;tp3_windows/Input.c&apos;" element1="/tp3_windows/Input.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1635881690668"/>&#x0A;<refactoring comment="Delete resource &apos;tp3_windows/Input.h&apos;" deleteContents="false" description="Delete resource &apos;tp3_windows/Input.h&apos;" element1="/tp3_windows/Input.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1635881695445"/>
+</session>

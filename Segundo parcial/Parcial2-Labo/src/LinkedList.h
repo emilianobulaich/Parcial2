@@ -31,22 +31,7 @@ struct LinkedList
 }typedef LinkedList;
 #endif
 
-/*struct eLibro
-{
-    int id;
-    char titulo[128];
-    char autor[128];
-    float precio;
-    int idEditorial;
-}typedef LinkedList;
 
-struct eEditorial
-{
-
-    int idEditorial;
-    char nombre[128];
-}typedef LinkedList;
-*/
 
 //Publicas
 LinkedList* ll_newLinkedList(void);
@@ -69,3 +54,7 @@ LinkedList* ll_subList(LinkedList* this,int from,int to);
 LinkedList* ll_clone(LinkedList* this);
 int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
 LinkedList* ll_filter(LinkedList* this, int (fn)(void* element));
+LinkedList* ll_map(LinkedList* this, void* (fn)(void* element));
+int ll_count(LinkedList* this, int (*fn)(void* element));
+float ll_countFloat(LinkedList* this, float (*fn)(void* element));
+

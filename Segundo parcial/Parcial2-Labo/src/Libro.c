@@ -1,50 +1,8 @@
 #include "Libro.h"
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <ctype.h>
-/*
-Employee* employee_new()
-{
-    Employee* newEmployee;
-    newEmployee = (Employee*)malloc(sizeof(Employee));
-
-    if(newEmployee != NULL)
-    {
-        newEmployee->id = 0;
-        strcpy(newEmployee->nombre, " ");
-        newEmployee->horasTrabajadas = 0;
-        newEmployee->sueldo = 0;
-    }
-
-    return newEmployee;
-}
-Employee* employee_newParametros(char* idStr, char* nombreStr, char* horasTrabajadasStr, char* sueldoStr)
-{
-    Employee* newEmployee;
-    newEmployee = employee_new();
-
-    int id;
-    int horas;
-    int sueldo;
-
-    if(idStr != NULL && nombreStr != NULL && horasTrabajadasStr != NULL && sueldoStr != NULL && newEmployee != NULL  ){
-		id= atoi(idStr);
-		horas= atoi(horasTrabajadasStr);
-		sueldo= atoi(sueldoStr);
-
-
-    	employee_setId(newEmployee, id);
-        employee_setNombre(newEmployee, nombreStr);
-        employee_setSueldo(newEmployee, sueldo);
-        employee_setHorasTrabajadas(newEmployee, horas);
-
-    }
-
-    return newEmployee;
-}
-*/
 eLibro* book_new()
 {
 	eLibro* newBook;

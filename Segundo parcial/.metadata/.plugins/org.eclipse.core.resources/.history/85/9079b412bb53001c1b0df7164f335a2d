@@ -1,0 +1,26 @@
+int controller_loadBookText(char* path , LinkedList* pArrayListBook);
+int controller_loadEditorialText(char* path , LinkedList* pArrayListEditorial);
+
+int controller_List(LinkedList* pArrayListBook, LinkedList* pArrayListEditorial);
+int controller_sortBooks(LinkedList* pArrayListBook);
+int controller_saveAsText(char* path , LinkedList* pArrayListBook);
+
+//int controller_LoadNextId(LinkedList* pArrayListBook);
+//int controller_LastIdSaved(char* path);
+//int controller_saveLastIdAsText(char* path, int id);
+int controller_saveBookAsBinary(char* path , LinkedList* pArrayBookList);
+int controller_loadBookFromBinary(char* path , LinkedList* pArrayListLibro);
+//int controller_saveEditorialAsBinary(char* path , LinkedList* pArrayListEditorial);
+//int controller_loadEditorialFromBinary(char* path , LinkedList* pArrayListEditorial);
+int controller_getEditorialNameById(LinkedList* pArrayEditorial, int id, char* nombreEditorial);
+int controller_listEditorialMinotauro(LinkedList* pArrayBookList, LinkedList* pArrayEditorialList);
+
+int FindMinotauro( void* element );
+
+void* buscarPosicionDescuento( void* element );
+int controller_descuento(LinkedList* pArrayListLibro, LinkedList* pArrayListEditorial);
+
+int controller_saveBookAsText(char* path, LinkedList* pArrayListLibro);
+int controller_saveEditorialAsText(char* path, LinkedList* pArrayListEditorial);
+int controller_countMayorA500(LinkedList* pArrayBookList);
+int countMayorA500( void* element);

@@ -8,20 +8,15 @@
 
 /****************************************************
     Menu:
-     1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).
-     2. Cargar los datos de los empleados desde el archivo data.csv (modo binario).
-     3. Alta de empleado
-     4. Modificar datos de empleado
-     5. Baja de empleado
-     6. Listar empleados
-     7. Ordenar empleados
-     8. Guardar los datos de los empleados en el archivo data.csv (modo texto).
-     9. Guardar los datos de los empleados en el archivo data.csv (modo binario).
-    10. Salir
+
+	1- Leer un archivo con los datos de libros.
+	2- Leer un archivo con los datos de editoriales.
+	3- Ordenar la lista por Autor.
+	4- Imprimir por pantalla los datos de los libros.
+	5- Listado de libros de editorial MINOTAURO.
+	6- Salir.
+
 *****************************************************/
-
-
-
 int main(){
 		setbuf(stdout,NULL);
 
@@ -47,7 +42,7 @@ int main(){
             case 1:
 
                 if(flagBooks== 0){
-                	ObtenerString("Ingrese el archivo de libros a cargar (incluir formato ej: .csv)", archivoLibros,sizeof(archivoLibros),3);
+                	ObtenerString("Ingrese el archivo de libros a cargar en formato TEXTO (incluir formato ej: .csv)", archivoLibros,sizeof(archivoLibros),3);
 
                     if(controller_loadBookText(archivoLibros,listaLibros) == 0){
                         printf("\nArchivo cargado exitosamente.\n\n");
@@ -63,12 +58,17 @@ int main(){
 
 					if(opcionArchivo == 1){
 						ll_clear(listaLibros);
-						if(controller_loadBookText("dataLibros.csv",listaLibros) == 0){
+
+						ObtenerString("Ingrese el archivo de libros a cargar en formato TEXTO (incluir formato ej: .csv)", archivoLibros,sizeof(archivoLibros),3);
+						 if(controller_loadBookText(archivoLibros,listaLibros) == 0){
 							printf("\nArchivo cargado exitosamente.\n\n");
 						}
 						else{
 							printf("\nEl archivo no ha podido ser cargado.\n\n");
 						}
+					}
+					else{
+						puts("Cancelando...");
 					}
 				}
                 break;
@@ -77,7 +77,7 @@ int main(){
 
         	   if(flagEditorial == 0){
 
-				   ObtenerString("Ingrese el archivo de editoriales a cargar (incluir formato ej: .csv)", archivoEditoriales,sizeof(archivoEditoriales),3);
+				   ObtenerString("Ingrese el archivo de editoriales a cargar en formato TEXTO (incluir formato ej: .csv)", archivoEditoriales,sizeof(archivoEditoriales),3);
 
 				   if(controller_loadEditorialText(archivoEditoriales,listaEditoriales) == 0){
 
@@ -97,7 +97,9 @@ int main(){
 
 						ll_clear(listaEditoriales);
 
-						if(controller_loadEditorialText("dataEditoriales.csv",listaEditoriales) == 0){
+						ObtenerString("Ingrese el archivo de editoriales a cargar en formato TEXTO (incluir formato ej: .csv)", archivoEditoriales,sizeof(archivoEditoriales),3);
+
+						if(controller_loadEditorialText(archivoEditoriales,listaEditoriales) == 0){
 
 							printf("\nArchivo cargado exitosamente.\n\n");
 						}
@@ -105,12 +107,14 @@ int main(){
 
 							printf("\nEl archivo no ha podido ser cargado.\n\n");
 						}
+					}else{
+						puts("Cancelando...");
 					}
 			   }
 			   break;
 
            case 3:
-            	if(flagBooks== 1 && flagEditorial == 1){
+            	if(flagBooks== 1){
 
             		if(controller_sortBooks(listaLibros) == 0){
 
@@ -154,15 +158,29 @@ int main(){
 
             case 6:
 
-                printf("\nSaliendo...\n\n");
+            	controller_descuento(listaLibros,listaEditoriales);
                 break;
+
+            case 7:
+				if(controller_countMayorA500(listaLibros) == -1){
+					puts("Error");
+				}
+                 break;
+            case 8:
+            	if(controller_SumaPearson(listaLibros ) == -1){
+            		puts("Error");
+            	}
+            	break;
+            case 9 :
+            	printf("\nSaliendo...\n\n");
+            					break;
 
             default:
                 printf("Error. Usted eligio una opcion invalida.\n");
             }
 
         }
-        while(option != 6);
+        while(option != 7);
 
    return 0;
 }

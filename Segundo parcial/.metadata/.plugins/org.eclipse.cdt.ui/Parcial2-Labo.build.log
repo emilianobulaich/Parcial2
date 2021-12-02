@@ -1,1 +1,7 @@
-Info: Nothing to build for Parcial2-Labo
+19:48:41 **** Incremental Build of configuration Debug for project Parcial2-Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\Libro.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parcial2-Labo.o" "src\\parser.o" 
+
+19:48:41 Build Finished. 0 errors, 0 warnings. (took 468ms)
+

@@ -1,101 +1,41 @@
 id,titulo,autor,precio,idEditorial
-1,Nevin,Longmaid,51.37,3
-2,Dasha,Anand,63.47,5
-3,Herby,Shearme,15.87,5
-4,Cordy,Samwyse,20.7,1
-5,Ennis,Dulanty,79.81,6
-6,Cos,Santacrole,38.48,6
-7,Joellen,Leguey,44.97,5
-8,Dorice,Commander,62.53,4
-9,Zea,Oloman,22.39,4
-10,Betteanne,Weich,99.54,2
-11,Monti,Pennoni,96.96,5
-12,Britt,Flecknell,6.59,3
-13,Wildon,O'Hanley,59.75,5
-14,Karry,Morland,16.42,1
-15,Shayne,Nangle,72.19,3
-16,Haskel,McMenamie,62.9,1
-17,Harwilll,Aisthorpe,20.85,1
-18,Galina,Cookes,42.46,5
-19,Ranee,Tal,91.84,6
-20,Laetitia,Haswell,7.0,6
-21,Bengt,Leddie,78.48,1
-22,Theodore,Dickon,51.94,3
-23,Mead,Doring,56.0,3
-24,Nico,Rickeard,63.35,5
-25,Whitney,Readman,63.71,3
-26,Erwin,Warlock,68.65,1
-27,Frederich,Dunks,21.55,1
-28,Larine,A'Barrow,29.97,1
-29,Vonny,Antley,38.34,1
-30,Theresina,Sheere,62.97,4
-31,Janie,Halksworth,3.21,2
-32,Sapphira,Cutcliffe,8.36,3
-33,Aveline,Verrico,6.18,2
-34,Whit,Wardesworth,76.12,5
-35,Justis,Daintry,49.56,6
-36,Gilbertine,Loving,89.77,5
-37,Kristo,Balmann,78.9,5
-38,Aldon,Flatte,10.59,6
-39,Marcy,Dauby,37.23,3
-40,Ravid,Barnewell,70.37,1
-41,Ricky,Hubbert,87.12,1
-42,Filide,Haspineall,78.43,3
-43,Rosalinde,Kloska,57.93,3
-44,Kerwin,Charkham,20.96,2
-45,Hedy,Blumson,91.17,1
-46,Culver,Shipcott,78.64,1
-47,Norene,Happs,77.85,6
-48,Raddie,Kelberer,26.89,3
-49,Jeanette,Diche,58.38,6
-50,Dee,Hawkwood,36.4,2
-51,Giorgi,Fishbourne,56.17,5
-52,Paxton,Borley,37.78,4
-53,Gussi,Grenshiels,98.62,1
-54,Reinwald,Truder,84.2,3
-55,Windham,MacBrearty,17.51,2
-56,Corey,Kubik,51.4,2
-57,Libby,Kuscha,26.94,2
-58,Abbie,Yoselevitch,45.27,5
-59,Victor,Rippingale,12.6,6
-60,Boycie,Brislan,15.21,4
-61,Meghan,Pavel,83.16,6
-62,Gilberta,Kennett,100.0,4
-63,Ailis,Dmisek,64.99,4
-64,Shena,Whorf,58.28,4
-65,Nealson,Jeavons,44.37,3
-66,Brantley,McKinnon,44.02,6
-67,James,Goundry,1.37,4
-68,Gareth,Gumly,26.29,6
-69,Lisle,de Copeman,27.0,2
-70,Hernando,Swainger,84.9,6
-71,Babs,Dayton,2.72,3
-72,Thorndike,Haldon,57.89,2
-73,Bessy,Davidsohn,55.3,1
-74,Dell,Kennaird,77.21,5
-75,Randy,Minchinton,99.56,2
-76,Melony,Munks,37.21,1
-77,Randell,Melanaphy,70.9,2
-78,Sig,Wyvill,18.92,6
-79,Neville,Batha,77.71,1
-80,Ogdan,Whal,35.32,1
-81,Ashlen,Proudlock,49.53,2
-82,Emmie,Freckleton,69.51,2
-83,Valentia,Clewes,72.61,6
-84,Coop,Slainey,99.95,2
-85,Laurent,Sans,66.55,1
-86,Bale,London,11.63,6
-87,Shurwood,Birrane,52.19,4
-88,Joell,Flaune,14.93,5
-89,Herbie,Gehring,57.01,1
-90,Stillman,Amphlett,78.3,3
-91,Barth,Fransson,7.89,3
-92,Marjie,Benezet,45.2,4
-93,Eula,Kenderdine,16.86,3
-94,Catarina,Haffard,81.59,3
-95,Rosina,Leynham,4.64,3
-96,Marguerite,Twitchings,49.14,1
-97,Alyosha,Antonazzi,45.24,4
-98,Lorne,Pauling,22.59,5
-99,Traci,Saltmarshe,83.78,3
-100,Laurie,Shear,86.84,5
+1,Ficciones,Jorge Luis Borges,230.50,3
+2,Rayuela,Julio Cortazar,426.95,3
+3,Operacion masacre,Rodolfo Walsh,91.79,6
+4,Los siete Locos,Roberto Arlt,313.23,1
+5,Quien mato a Rosendo,Rodolfo Walsh,200.45,2
+6,Glosa,Juan Jose Saer,199.20,4
+7,La biblioteca de babel,Jorge Luis Borges,300.20,3
+8,La trama Celeste,Adolfo Bloy Casares,150.45,2
+9,El juguete Rabioso,Roberto Arlt,345.6,4
+10,Bestiario,Julio Cortazar,400.45,5
+11,El limonero real,Juan Jose Saer,211.34,1
+12,El sueno de los heroes,Adolfo Bloy Casares,664.3,6
+13,Blanco Nocturno,Ricardo Piglia,455.45,6
+14,El Jardin de sandeiros,Jorge Luis Borges,423.34,2
+15,Respiracion Artificial,Ricardo Piglia,120.50,3
+16,Un oscuro dia de justicia,Rodolfo Walsh,140.40,4
+17,El entenado,Juan Jose Saer,230.50,4
+18,La ciudad ausente,Ricardo Piglia,300.43,1
+19,Aguafuertes portenas,Roberto Arlt,120.40,4
+20,Historias de cronopios y de famas,Julio Cortazar,350.60,5
+21,El hacedor,Jorge Luis Borges,600.12,6
+22,El perseguidor,Julio Cortazar,400.57,3
+23,Dormir al Sol,Adolfo Bloy Casares,300.34,4
+24,Los oficios terrestres,Rodolfo Walsh,250.45,2
+25,Las ruinas circulares,Jorge Luis Borges,500.56,4
+26,El jorobadito,Roberto Arlt,244.67,5
+27,El libro de los seres imaginarios,Jorge Luis Borges,700.56,3
+28,Nadie nada nunca,Juan Jose Saer,200.30,5
+29,Las armas secretas,Julio Cortazar,500.50,2
+30,el amor brujo,Roberto Arlt,340.40,1
+31,Funes el memorioso,Jorge Luis Borges,700.50,1
+32,El inmortal,Jorge Luis Borges,500.40,6
+33,La noche boca arriba,Julio Cortazar,325.40,2
+34,Los autonautas,Julio Cortazar,300.50,4
+35,El camino de ida,Ricardo Piglia,350.67,4
+36,La sombra de un pajaro,Rodolfo Walsh,250.50,3
+37,Prision perpetua,Ricardo Piglia,300.50,2
+38,historia universal de la infamia,Jorge Luis Borges,600.50,3
+39,Octaedro,Julio Cortazar,700.80,5
+40,Otras inquisiciones,Jorge Luis Borges,699.99,1

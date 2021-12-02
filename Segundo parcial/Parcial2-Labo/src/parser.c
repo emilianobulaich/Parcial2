@@ -47,6 +47,8 @@ int parser_BookFromText(FILE* pFile, LinkedList* pArrayListBook)
 	}
 	return retorno;
 }
+
+
 /** \brief Parsea los datos los datos de las editoriales desde el archivo de editoriales (modo texto).
  *
  * \param pFile FILE*
@@ -84,17 +86,3 @@ int parser_EditorialFromText(FILE* pFile, LinkedList* pArrayListEditorial)
 	}
 	return retorno;
 }
-/*
-int parserLastIdFromText(FILE* pFile){
-	int retorno = -1;
-	char Id[128];
-
-	if(pFile != NULL){
-		while(!feof(pFile)){
-			fscanf(pFile, "%[^\n]\n", Id);
-			retorno = atoi(Id);
-		}
-	}
-
-	return retorno;
-}*/

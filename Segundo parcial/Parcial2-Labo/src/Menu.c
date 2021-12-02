@@ -8,5 +8,8 @@ void Menu(void){
 	printf("3- Ordenar la lista por Autor.\n");
 	printf("4- Imprimir por pantalla los datos de los libros.\n");
 	printf("5- Listado de libros de editorial MINOTAURO.\n");
-	printf("6- Salir.\n");
+	printf("6- Hacer descuento.\n");
+	printf("7- Libros mayores a 500\n");
+    printf("8- Determinar la sumatoria de libros PEARSON\n");
+    printf("9- Salir");
 }

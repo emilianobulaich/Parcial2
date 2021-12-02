@@ -253,7 +253,7 @@ int ll_clear(LinkedList* this)
 {
     int returnAux = -1;
     if(this != NULL){
-        for(int i = 0; i < ll_len(this); i++){
+        for(int i = ll_len(this) ; i >0 ; i--){
         	ll_remove(this,i);
         	returnAux = 0;
         }
@@ -531,17 +531,92 @@ LinkedList* ll_filter(LinkedList* this, int (fn)(void* element)){
     if(nuevaLista != NULL  && this != NULL){
         for(int i = 0; i< ll_len(this); i++){
             pElement = ll_get(this, i);
-            if(pElement !=NULL && fn(pElement) != -1 ){
-
-                    if(ll_add(nuevaLista, pElement) == -1){
-                    	nuevaLista = NULL;
-                        puts("No se pudo filtrar");
-                        break;
-                    }
-                }
+            if(fn(pElement) != -1 ){
+				if(ll_add(nuevaLista, pElement) == -1){
+					nuevaLista = NULL;
+					puts("No se pudo filtrar");
+					break;
+				}
+            }
         }
     }
 
 
     return nuevaLista;
 }
+
+/** \brief Crea una lista añadiendo elementos a la misma en funcion de un criterio
+ * \param this LinkedList* Puntero a la lista
+ * \param int fn  Funcion criterio
+ * \return int Retorna  (NULL) Error: si algun puntero a la listas es NULL
+                        (La nueva lista filtrada) Si ok
+ */
+
+LinkedList* ll_map(LinkedList* this, void* (fn)(void* element)){
+
+    void* pElement;
+    LinkedList* nuevaLista;
+
+    nuevaLista = ll_newLinkedList();
+
+     if(this != NULL &&  nuevaLista != NULL){
+
+               for(int i = 0; i< ll_len(this); i++){
+
+            	   pElement = ll_get(this, i);
+
+                   ll_add(nuevaLista, fn(pElement));
+
+               }
+          }
+
+     return nuevaLista;
+}
+
+/** \brief Crea una lista añadiendo elementos a la misma en funcion de un criterio
+ * \param this LinkedList* Puntero a la lista
+ * \param int fn  Funcion criterio
+ * \return int Retorna  (NULL) Error: si algun puntero a la listas es NULL
+                        (La nueva lista filtrada) Si ok
+ */
+int ll_count(LinkedList* this, int (*fn)(void* element)){
+	int retorno = -1;
+
+	void* pElement;
+
+	 if(this != NULL){
+		    retorno = 0;
+	        for(int i = 0; i< ll_len(this); i++){
+	            pElement = ll_get(this, i);
+                retorno+=fn(pElement);
+	        }
+	 }
+
+	return retorno;
+
+}
+float ll_countFloat(LinkedList* this, float (*fn)(void* element)){
+	float retorno = -1;
+
+	void* pElement;
+
+	 if(this != NULL){
+		    retorno = 0;
+	        for(int i = 0; i< ll_len(this); i++){
+	            pElement = ll_get(this, i);
+                retorno+=fn(pElement);
+	        }
+	 }
+
+	return retorno;
+
+}
+
+
+
+
+
+
+
+
+
