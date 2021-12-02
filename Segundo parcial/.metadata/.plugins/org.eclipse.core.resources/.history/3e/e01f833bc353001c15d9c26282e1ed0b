@@ -172,14 +172,14 @@ int main(){
             	break;
             case 9 :
             	printf("\nSaliendo...\n\n");
-            	break;
+            					break;
 
             default:
                 printf("Error. Usted eligio una opcion invalida.\n");
             }
 
         }
-        while(option != 9);
+        while(option != 7);
 
    return 0;
 }

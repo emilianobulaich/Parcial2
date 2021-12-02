@@ -7,3 +7,37 @@ gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
 gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\Libro.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parcial2-Labo.o" "src\\parser.o" 
+19:55:17 **** Incremental Build of configuration Debug for project Parcial2-Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\Libro.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parcial2-Labo.o" "src\\parser.o" 
+Info: Nothing to build for Parcial2-Labo
+Info: Nothing to build for Parcial2-Labo
+19:56:41 **** Incremental Build of configuration Debug for project Parcial2-Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial2-Labo.o" "..\\src\\Parcial2-Labo.c" 
+..\src\Parcial2-Labo.c: In function 'main':
+..\src\Parcial2-Labo.c:165:8: warning: implicit declaration of function 'controller_MostrarMayorA500'; did you mean 'controller_mostrarMayorA500'? [-Wimplicit-function-declaration]
+  165 |     if(controller_MostrarMayorA500(listaLibros) == -1){
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        controller_mostrarMayorA500
+gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\Libro.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parcial2-Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial2-Labo.o: in function `main':
+C:\Users\Yeller\Desktop\Segundo parcial\Segundo parcial\Parcial2-Labo\Debug/../src/Parcial2-Labo.c:165: undefined reference to `controller_MostrarMayorA500'
+collect2.exe: error: ld returned 1 exit status
+19:56:52 **** Incremental Build of configuration Debug for project Parcial2-Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial2-Labo.o" "..\\src\\Parcial2-Labo.c" 
+gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\Libro.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parcial2-Labo.o" "src\\parser.o" 
+Info: Nothing to build for Parcial2-Labo
+19:58:08 **** Incremental Build of configuration Debug for project Parcial2-Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial2-Labo.o" "..\\src\\Parcial2-Labo.c" 
+gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\Libro.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parcial2-Labo.o" "src\\parser.o" 
+19:58:39 **** Incremental Build of configuration Debug for project Parcial2-Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial2-Labo.o" "..\\src\\Parcial2-Labo.c" 
+gcc -o Parcial2-Labo.exe "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\Libro.o" "src\\LinkedList.o" "src\\Menu.o" "src\\Parcial2-Labo.o" "src\\parser.o" 
+Info: Nothing to build for Parcial2-Labo
+Info: Nothing to build for Parcial2-Labo
+Info: Nothing to build for Parcial2-Labo
